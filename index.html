@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b5e33f91a7.js" crossorigin="anonymous"></script>
     <title>Pomodoro Clock</title>
 </head>
 <body>
-    
     <header>
-
+        <div class="title">
+            <h1 >Pomodoro Clock</h1>
+            <div class="menu">
+                <div class="hamburguer max-hamburguer">
+                </div>        
+            </div>
+        </div>
+            <nav class="nav-bar">
+                <button class="nav-btn">Floresta</button>
+                <button class="nav-btn">Oceano</button>
+                <button class="nav-btn">Silêncio</button>
+                <button class="nav-btn">Café</button>
+                <button class="nav-btn">Jazz</button>
+                <button class="nav-btn">Meditação</button>
+            </nav>
     </header>
     <main>
         <div class="container">
-
+            <div class="clock">
+                <h1>00</h1>
+                <div class="clock-work">
+                    <button class="play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="pause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="time">
+                <div class="work-time">
+                    <div class="arrow-up">
+                        <button class="work-time-arrow-up">
+                            <i class="fas fa-angle-double-up"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="work-time-number">
+                    <div class="arrow-down">
+                        <button class="work-time-arrow-down">
+                            <i class="fas fa-angle-double-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relax-time">
+                    <div class="arrow-up">
+                        <button class="relax-time-arrow-up">
+                            <i class="fas fa-angle-double-up"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="relax-time-number">
+                    <div class="arrow-down">
+                        <button class="relax-time-arrow-down">
+                            <i class="fas fa-angle-double-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
