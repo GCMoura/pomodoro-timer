@@ -1,8 +1,9 @@
 //menu deslizante no mobile
 const navBar = document.querySelectorAll('.nav-bar')[0]
 const menu = document.querySelector('.menu')
+const clickMenu = document.querySelector('.title')
 
-menu.addEventListener('click', toggleClassMenu, false)
+clickMenu.addEventListener('click', toggleClassMenu, false)
 
 var isOpen = false
 
