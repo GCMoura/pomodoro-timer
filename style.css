@@ -1,20 +1,22 @@
 * {
+    box-sizing: border-box;
+    font-family: consolas, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
     height: 100vh;
-    background-color: blue;
+    background-color: #fff;
 }
 header{
     height: 80px;
-    background-color: aliceblue;
+    background-color: rgb(167, 224, 167);
+    font-size: 18px;
 }
 .title{
     align-items: center;
-    color: tomato   ;
+    color: tomato;
     display: flex;
     justify-content: center;
     padding: 20px 0px;
@@ -30,16 +32,35 @@ main{
 }
 .nav-bar{
     align-items: center;
-    background-color:rgb(109, 52, 52);
+    background-color: rgb(155, 219, 155);
     display: flex;
     flex-direction: column;
     height: calc(100vh - 80px);
-    justify-content: center;
+    justify-content: stretch;
     left: 0;
     position: absolute;
     transform: translateX(-100%);/*mudar para -100%*/
     transition: all 0.5s ease-out;
     width: 100%;
+}
+.nav-btn{
+    background-color: transparent;
+    border: transparent;
+    border-radius: 5px;
+    color: #333;
+    font-size: 28px;
+    height: 70px;
+    margin: 5px 0px;
+    width: 100%;
+}
+.nav-btn:nth-child(1){
+    margin-top: 50px;
+}
+.nav-btn:active,
+.nav-btn:hover {
+    border: rgb(29, 95, 29);
+    background-color: rgb(29, 95, 29);
+    color: #fff;
 }
 .menu-open{
     transform: translateX(0);
@@ -82,19 +103,7 @@ main{
     top: 0;
     transform: rotateZ(90deg);
 }
-.nav-btn{
-    background-color: transparent;
-    border: transparent;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 28px;
-    height: 70px;
-    margin: 5px 0px;
-    width: 100%;
-}
-.nav-btn:active {
-    background-color: tomato;
-}
+
 /*container*/
 .container{
     align-items: center;
@@ -115,18 +124,24 @@ main{
     margin-top: 30px;
     width: 280px;
 }
-.clock h1{
+.input-clock{
+    border: transparent;
     color: green;
     font-size: 140px;
+    height: 130px;
+    text-align: center;
+    width: 150px;
 }
 .clock-work{
     display: flex;
     justify-content: space-between;
 }
-.clock-work button{
+.play,
+.pause{
     background-color: transparent;
     border: transparent;
     color: green;
+    cursor: pointer;
     font-size: 40px;
     padding: 10px;
     width: 60px;
@@ -142,13 +157,16 @@ main{
     background-color: transparent;
     border: transparent;
     color: green;
+    cursor: pointer;
     font-size: 50px;
     width: 70px;
     height: 70px;
 }
 .time input{
     border: transparent;
+    font-size: 50px;
     height: 70px;
+    text-align: center;
     width: 70px;
 }
 .work-time,

@@ -17,18 +17,18 @@
             </div>
         </div>
             <nav class="nav-bar">
-                <button class="nav-btn">Floresta</button>
-                <button class="nav-btn">Oceano</button>
-                <button class="nav-btn">Silêncio</button>
-                <button class="nav-btn">Café</button>
-                <button class="nav-btn">Jazz</button>
-                <button class="nav-btn">Meditação</button>
+                <button class="nav-btn">Floresta <audio src="./audios/forest.mp3" class="forest"></audio></button>
+                <button class="nav-btn">Oceano <audio src="./audios/sea.mp3" class="sea"></audio></button>
+                <button class="nav-btn">Silêncio <audio src="./audios/silence.mp3" class="silence"></audio></button>
+                <button class="nav-btn">Chuva <audio src="./audios/rain.mp3" class="rain"></audio></button>
+                <button class="nav-btn">Jazz <audio src="./audios/jazz.mp3" class="jazz"></audio></button>
+                <button class="nav-btn">Meditação <audio src="./audios/peace.mp3" class="peace"></audio></button>
             </nav>
     </header>
     <main>
         <div class="container">
             <div class="clock">
-                <h1>00</h1>
+                <input type="text" class="input-clock" value="00">
                 <div class="clock-work">
                     <button class="play">
                         <i class="fas fa-play"></i>
@@ -45,7 +45,7 @@
                             <i class="fas fa-angle-double-up"></i>
                         </button>
                     </div>
-                    <input type="text" class="work-time-number">
+                    <input type="text" class="work-time-number" value="2">
                     <div class="arrow-down">
                         <button class="work-time-arrow-down">
                             <i class="fas fa-angle-double-down"></i>
@@ -53,12 +53,13 @@
                     </div>
                 </div>
                 <div class="relax-time">
+                    <audio src="./audios/beep.mp3" class="beep"></audio>
                     <div class="arrow-up">
                         <button class="relax-time-arrow-up">
                             <i class="fas fa-angle-double-up"></i>
                         </button>
                     </div>
-                    <input type="text" class="relax-time-number">
+                    <input type="text" class="relax-time-number" value="5">
                     <div class="arrow-down">
                         <button class="relax-time-arrow-down">
                             <i class="fas fa-angle-double-down"></i>
