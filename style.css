@@ -153,10 +153,21 @@ main{
     font-size: 50px;
     margin: 40px 0px;
 }
-.time button{
+.work-time-arrow-up,
+.work-time-arrow-down{
     background-color: transparent;
     border: transparent;
     color: green;
+    cursor: pointer;
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+}
+.relax-time-arrow-up,
+.relax-time-arrow-down {
+    background-color: transparent;
+    border: transparent;
+    color: red;
     cursor: pointer;
     font-size: 50px;
     width: 70px;

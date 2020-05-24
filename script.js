@@ -158,7 +158,7 @@ function playClock(){
     play = setInterval(() => {
         if(inputClock.value == 0){ //terminou o tempo de trabalho e começa o tempo de relaxamento
             clearInterval(play)
-            if(soundPlay != ""){ //se nenhum som estiver tocando, não precisa fazer nada
+            if(soundPlay != ""){ //se algum som estiver tocando, pausa
                 soundPlay.pause()
             }
             beep.play()
@@ -167,18 +167,18 @@ function playClock(){
             relaxTimer()
         } else {
             inputClock.value -= 1
-            if(soundPlay != ""){  //se nenhum som estiver tocando, não precisa fazer nada
+            if(soundPlay != ""){  //se algum som estiver tocando, toca
                 soundPlay.play()
             }
         }
-    }, 1000); //por minuto
+    }, 60000); //por minuto
 }
 
 pauseBtn.addEventListener('click', pauseClock, false)
 
 function pauseClock(){
     clearInterval(play)
-    if(soundPlay != ""){  //se nenhum som estiver tocando, não precisa fazer nada
+    if(soundPlay != ""){  //se algum som estiver tocando, pausa
         soundPlay.pause()
     }
 }
@@ -203,6 +203,9 @@ function relaxTimer(){
             pauseBtn.disabled = false
         } else {
             inputClock.value -= 1
+            if(soundPlay != ""){ //se algum som estiver tocando, pausa
+                soundPlay.pause()
+            }
         }
-    }, 1000) //por minuto
+    }, 60000) //por minuto
 }
