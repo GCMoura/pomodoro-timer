@@ -70,6 +70,11 @@ function playSound(sound){
         soundPlay = silence
         soundPlay.play()
     } 
+
+    //fechar menu
+    navBar.classList.remove('menu-open')
+    menu.firstElementChild.classList.remove('hamburguer-x')
+    isOpen = false
 }
 
 //incrementar e decrementar tempo de trabalho e mostrar no tempo principal
