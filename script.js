@@ -156,11 +156,19 @@ var play
 var relax
 const clockStyle = document.querySelector('.clock')
 const clockNumber = document.querySelector('.input-clock')
+var isPaused = false
 
 playBtn.addEventListener('click', playClock, false)
 
 function playClock(){
     inputClock.value = inputClock.value // continua o timer de onde parou após o pause
+    if(isPaused === false){
+        if(soundPlay != ""){  //se algum som estiver tocando, toca
+            soundPlay.play()
+        }
+        isPaused = true
+    }
+
     play = setInterval(() => {
         if(inputClock.value == 0){ //terminou o tempo de trabalho e começa o tempo de relaxamento
             clearInterval(play)
@@ -178,6 +186,8 @@ function playClock(){
             }
         }
     }, 60000); //por minuto
+    
+    
 }
 
 pauseBtn.addEventListener('click', pauseClock, false)
@@ -187,6 +197,7 @@ function pauseClock(){
     if(soundPlay != ""){  //se algum som estiver tocando, pausa
         soundPlay.pause()
     }
+    isPaused = false
 }
 
 //funcionamento do tempo de relaxamento
