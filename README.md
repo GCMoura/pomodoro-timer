@@ -22,6 +22,7 @@ This application create a timer based on Pomodoro Technique.
 
 ## Getting Started
 This page was created using only Vanilla Javascript, without frameworks or libraries, therefore for visualizing this page access: 
+
 https://gcmoura.github.io/pomodoro-timer/
 
 ## How it works
@@ -29,10 +30,12 @@ You choose the time of working in the green arrow up to 30 minutes and choose th
 
 So is just press play.
 
-You also can choose any one of the songs in the header for listening during the time of working.
+You also can choose any one of the songs in the menu for listening during the time of working.
 
 ## Clone
-Clone this repository to your local machine using https://github.com/GCMoura/pomodoro-timer.git.
+Clone this repository to your local machine using:
+
+https://github.com/GCMoura/pomodoro-timer.git.
 
 ## Deploy
 This application was deployed using [GithubPages](https://pages.github.com/).
